@@ -12,5 +12,5 @@
 - `docker compose up`
 - Assuming docker and docker-comppose is installed on your system.
 - Takes 3 to 5 minutes to build the images.
-- After successfully running the above command, visit localhost:5174/ for sensor_management frontend and localhost:5089/ for onem2m server.
+- After successfully running the above command, visit ![localhost:/5174](http://localhost:/5174) for sensor_management frontend and ![localhost:/5089](http://localhost:/5089) for onem2m server.
 
