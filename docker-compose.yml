@@ -1,0 +1,41 @@
+version: '3'
+services:
+  onem2m_server_se:
+    build: ./onem2m_server
+    # image: abhishek28069/unisense:onem2m_server
+    container_name: onem2m_server_se
+    hostname: onem2m_server_se
+    ports:
+      - "5089:5089"
+    networks:
+      - my-network
+      
+  sensor_manager_se:
+    build: ./sensor_manager
+    # image: abhishek28069/unisense:sensor_manager
+    container_name: sensor_manager_se
+    hostname: sensor_manager_se
+    ports:
+      - "8069:8069"
+      - "5091:5091"
+      - "2000:2000"
+    cap_add:
+      - SYS_ADMIN
+      - CAP_SYS_ADMIN
+    networks:
+      - my-network
+
+  sensormanager_frontend_se:
+    build: ./sensormanager_frontend
+    # image: abhishek28069/unisense:sensormanager_frontend
+    container_name: sensormanager_frontend_se
+    hostname: sensormanager_frontend_se
+    ports:
+      - "5174:5174"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+
+
