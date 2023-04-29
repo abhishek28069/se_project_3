@@ -1,6 +1,5 @@
-# SE Project 3
+# SE Project-3 Team-19
 # Smart City System
-## Team 19
 
 
 
